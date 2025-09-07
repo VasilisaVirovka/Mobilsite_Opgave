@@ -1,0 +1,135 @@
+:root{
+  --accent: #2b8cff;
+  --muted:#666666;
+  --bg:#ffffff;
+  --max-width:480px;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  padding:0;
+  background:var(--bg);
+  color:#111;
+  line-height:1.4;
+}
+
+header{
+  padding:16px;
+  border-bottom:1px solid #eee;
+}
+
+.site-title{
+  font-family: 'Montserrat', 'Inter', sans-serif;
+  font-size:1.25rem;
+  margin:0 0 8px 0;
+}
+
+nav ul{
+  list-style:none;
+  display:flex;
+  gap:8px;
+  padding:0;
+  margin:0;
+  overflow:auto;
+}
+
+nav a{
+  text-decoration:none;
+  padding:8px 10px;
+  display:inline-block;
+  border-radius:8px;
+  color:var(--accent);
+  font-weight:600;
+}
+
+main{
+  padding:16px;
+  max-width:var(--max-width);
+  margin:0 auto;
+}
+
+.intro img{
+  display:block;
+  max-width:100%;
+  height:auto;
+  margin-top:12px;
+  border-radius:8px;
+}
+
+h2{font-size:1.125rem;margin:0 0 8px 0}
+h3{font-size:1rem;margin-top:16px}
+
+p{margin:0 0 12px 0}
+
+footer{
+  padding:16px;
+  border-top:1px solid #eee;
+  font-size:0.9rem;
+  color:var(--muted);
+  max-width:var(--max-width);
+  margin:0 auto;
+}
+
+/* Accessibility: focus styles for keyboard users */
+a:focus{outline:3px solid #cfe4ff; outline-offset:2px;}
+
+/* Slight layout change for larger screens */
+@media(min-width:768px){
+  :root{--max-width:760px}
+  .site-title{font-size:1.5rem}
+  nav ul{gap:12px}
+}
+
+.intro img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 16px; /* laver luft under hvert billede */
+  border-radius: 8px;
+}
+
+.galleri-link {
+  display: inline-block;
+  background-color: #2b8cff;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.galleri-link:hover {
+  background-color: #1a6ed8;
+}
+
+.galleri-link {
+  display: inline-block;
+  margin-top: 20px; /* giver luft OVER linket */
+}
+.galleri-link {
+  display: inline-block;
+  margin-bottom: 24px; /* giver luft UNDER linket */
+}
+
+/* style.css */
+body {
+  margin: 0;       /* fjerner browserens standardmargen */
+  padding: 20px;   /* giver mellemrum omkring alt indhold */
+}
+
+/* Giver luft mellem tekst og billeder på alle sider */
+p {
+  margin-bottom: 20px;   /* afstand under tekst */
+}
+
+img {
+  display: block;        /* sikrer at billedet står på egen linje */
+  margin: 40px 0;        /* 40px luft over og under billeder */
+}
+p {
+  line-height: 1.5;  /* Øger linjeafstanden i teksten */
+}
+
